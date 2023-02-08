@@ -6,7 +6,8 @@ const Article = ({ article }) => {
     <div className="Article">
       <Link to={`/articles/${article.article_id}`}>
         <h2>{article.title}</h2>
-        <p>{article.body}</p>
+        <p>Written By: {article.author}</p>
+        <p>Topic: {article.topic}</p>
       </Link>
     </div>
   );
