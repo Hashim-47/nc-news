@@ -8,6 +8,9 @@ const Article = ({ article }) => {
         <h2>{article.title}</h2>
         <p>Written By: {article.author}</p>
         <p>Topic: {article.topic}</p>
+        <p>Date: {article.created_at}</p>
+        <p>Votes: {article.votes}</p>
+        <p>Comments: {article.comment_count}</p>
       </Link>
     </div>
   );
