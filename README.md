@@ -1,4 +1,4 @@
-# **NorthCoders News Site**
+# **NC-News Website**
 
 # **Built By Mohammed Hashim**
 
