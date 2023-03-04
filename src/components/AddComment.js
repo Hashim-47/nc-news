@@ -18,16 +18,21 @@ const AddComment = ({ article_id, comments, setComments }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <textarea
-          placeholder="Comment"
-          value={body}
-          required
-          onChange={(event) => {
-            setBody(event.target.value);
-            setSubmitTrue(false);
-          }}
-        />
-        <button type="submit">Submit</button>
+        <div className="flex flex-column flex-center">
+          <textarea
+            className="full-width padding-small margin-bottom-medium"
+            placeholder="Comment"
+            value={body}
+            required
+            onChange={(event) => {
+              setBody(event.target.value);
+              setSubmitTrue(false);
+            }}
+          />
+          <button className="button submit-button" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
       <p style={{ display: submitTrue ? "block" : "none" }}>Comment Posted!</p>
     </>

@@ -19,9 +19,14 @@ const Topics = ({ selectedTopic, setSelectedTopic }) => {
   };
 
   return (
-    <div className="topic">
-      <select onChange={handleChange} id="topic" value={selectedTopic}>
-        <option value="">All</option>
+    <div className="topic margin-right-small">
+      <select
+        className="padding-small remove-padding-mobile"
+        onChange={handleChange}
+        id="topic"
+        value={selectedTopic}
+      >
+        <option value="">All Topics</option>
         {topics.map((topic) => (
           <option key={topic.slug} value={topic.slug}>
             {topic.slug}

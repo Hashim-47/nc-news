@@ -25,15 +25,17 @@ const SingleArticle = () => {
   }
 
   return (
-    <div className="single-article">
-      <h2>{article.title}</h2>
-      <p>{article.body}</p>
-      <Votes article_id={article_id} votes={article.votes} />
-      <AddComment
-        article_id={article_id}
-        comments={comments}
-        setComments={setComments}
-      />
+    <div className="single-article container">
+      <div className="article-card margin-bottom-large">
+        <h2 className="margin-bottom-medium">{article.title}</h2>
+        <p className="margin-bottom-small">{article.body}</p>
+        <Votes article_id={article_id} votes={article.votes} />
+        <AddComment
+          article_id={article_id}
+          comments={comments}
+          setComments={setComments}
+        />
+      </div>
       <Comment
         article_id={article_id}
         comments={comments}

@@ -27,8 +27,8 @@ const ArticleList = () => {
   }
 
   return (
-    <div className="ArticleList">
-      <div>
+    <div className="ArticleList container">
+      <div className="flex flex-center margin-bottom-medium">
         <Topics
           selectedTopic={selectedTopic}
           setSelectedTopic={setSelectedTopic}
